@@ -27,6 +27,7 @@
     padding: 0;
     height: 100%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .act1navigations li {
@@ -40,9 +41,10 @@
     text-decoration: none;
     font-size: 18px;
     color: white;
-    padding: 0 40px;
+    padding: 0 20px;
     border-left: 1px solid rgba(255, 255, 255, 0.4);
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .act1navigations li a:hover {
@@ -104,4 +106,36 @@
 .act1text li:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .act1navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .act1navigations {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .act1navigations li a {
+        width: 100%;
+        justify-content: center;
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding: 12px 20px;
+    }
+
+    .group-photo {
+        width: 95%;
+    }
+
+    .act1text {
+        width: 90%;
+        padding: 20px;
+    }
 }

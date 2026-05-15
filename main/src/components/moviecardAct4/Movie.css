@@ -70,3 +70,9 @@
   font-size: 12px;
   margin-top: 6px;
 }
+
+@media (max-width: 768px) {
+    .movie-card img {
+        height: 300px;
+    }
+}

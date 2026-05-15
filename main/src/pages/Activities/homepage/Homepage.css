@@ -24,23 +24,27 @@
     display: flex;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .homenavigations li a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    height: 80px;
     text-decoration: none;
     font-size: 18px;
     color: white;
-    padding: 20px 25px;
-    border-left: 1px solid white;
+    padding: 0 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .homenavigations li a:hover {
     color: slategray;
     cursor: pointer;
     transform: scale(1.05);
-    opacity: 0.95;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 #homeHOMESECTION {
@@ -157,4 +161,42 @@
     display: block;
     font-size: 18px;
     color: #f0f8ff;
+}
+
+@media (max-width: 768px) {
+
+    .homenavbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .homenavigations {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .homenavigations li a {
+        width: 100%;
+        text-align: center;
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding: 12px;
+    }
+
+    .members {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .labActivities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .labActivities {
+        grid-template-columns: 1fr;
+    }
 }
