@@ -1,0 +1,107 @@
+.act1navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0 10px;
+    height: 80px;
+    z-index: 1000;
+}
+
+.act1navname {
+    color: gainsboro;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+.act1navigations {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.act1navigations li {
+    height: 100%;
+}
+
+.act1navigations li a {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 0 40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.act1navigations li a:hover {
+    color: slategray;
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#HOMESECTION,
+#ABOUTSECTION {
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 90px;
+}
+
+.group-photo {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.group-photo:hover {
+    transform: scale(1.02);
+}
+
+.act1text {
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.act1text ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.act1text li {
+    font-size: 18px;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #f0f8ff;
+    color: #222;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.act1text li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}

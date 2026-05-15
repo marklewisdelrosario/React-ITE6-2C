@@ -1,0 +1,160 @@
+.homenavname {
+    color: gainsboro;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.homenavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0 10px;
+    height: 80px;
+    z-index: 1000;
+}
+
+.homenavigations {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.homenavigations li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 20px 25px;
+    border-left: 1px solid white;
+    transition: all 0.3s ease;
+}
+
+.homenavigations li a:hover {
+    color: slategray;
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+#homeHOMESECTION {
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.group8 {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    object-fit: cover;
+}
+
+.hometext {
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    width: 90%;
+    max-width: 330px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid aliceblue;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.hometext ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.hometext li {
+    font-size: 18px;
+    padding: 5px;
+    margin: 8px 0;
+    background-color: #f0f8ff;
+    color: #222;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.hometext li:hover {
+    transform: scale(1.05);
+    background-color: lightgray;
+}
+
+#ACTIVITYSECTION {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    background-color: #222;
+}
+
+.activities {
+    width: 550px;
+    max-width: 90%;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.activities p {
+    font-size: 30px;
+    text-align: center;
+    color: azure;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+
+.labActivities {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.labActivities a {
+    padding: 25px;
+    background-color: #222222;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    color: azure;
+    border: 1px solid azure;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.labActivities a:hover {
+    transform: scale(1.05);
+    background-color: rgb(86, 86, 86);
+    cursor: pointer;
+}
+
+.labActivities a span {
+    display: block;
+    font-size: 18px;
+    color: #f0f8ff;
+}

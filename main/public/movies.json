@@ -1,0 +1,32 @@
+{
+  "movie_list": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "year": 2010,
+      "genre": "Action/Sci-Fi",
+      "image": "/images/inception.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Interstellar",
+      "year": 2014,
+      "genre": "Sci-Fi",
+      "image": "/images/interstellar.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Titanic",
+      "year": 1997,
+      "genre": "Romance/Drama",
+      "image": "/images/titanic.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "genre": "Action",
+      "image": "/images/endgame.jpg"
+    }
+  ]
+}
