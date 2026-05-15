@@ -1,5 +1,5 @@
 import React from "react";
-import "./Moviecard.css";
+import "./MovieCard.css";
 
 const MovieCard = ({ movie, genres, isLoading }) => {
   if (isLoading) {
